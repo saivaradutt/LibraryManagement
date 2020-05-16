@@ -1,90 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-    android:background="@color/color4"
-tools:context="com.project.librarymanagement.MainActivity">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="170dp"
-    android:id="@+id/header"
-    android:orientation="vertical"
-    android:background="@drawable/header">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Login"
-        android:textStyle="bold"
-        android:textSize="45dp"
-        android:fontFamily="cursive"
-        android:textColor="@android:color/white"/>
-
-
-
-</LinearLayout>
-
-<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_below="@id/header"
-    android:padding="15dp"
-    android:layout_marginTop="40dp"
-    android:gravity="center_horizontal">
+    tools:context=".MainActivity"
+    android:background="@color/colorLightBg">
 
-    <EditText
-        android:id="@+id/main_username"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:drawableStart="@drawable/ic_email_foreground"
-        android:ems="10"
-        android:hint="username"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:paddingTop="20dp"
-        android:text="username" />
-
-    <EditText
-        android:id="@+id/main_password"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:drawableStart="@drawable/ic_password_foreground"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:padding="15dp" />
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/main_login"
-        android:text="Login"
-        android:textColor="@android:color/white"
-        android:background="@color/color2"
-        android:layout_marginTop="30dp"/>
+        android:orientation="horizontal">
 
-    <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome Admin"
+            android:textColor="@color/colorBrownDark"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/main_logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="430dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/main_register"
-        android:text="register"
-        android:onClick="onClickedLogin"
-        android:textColor="@android:color/white"
-        android:background="@color/color2"
-        android:layout_marginTop="30dp"/>
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View all Books"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_viewAllBooks"
+            android:onClick="viewAllBooks"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Book"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_addNewBook"
+            android:onClick="addNewBook"/>
 
-    <ImageView
-        android:layout_width="118dp"
-        android:layout_height="87dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="145dp"
-        android:background="@drawable/logo2"
-        android:paddingBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Book Detail"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_updateBookDetail"
+            android:onClick="updateBookDetail"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Book Record"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_deleteBookRecord"
+            android:onClick="deleteBookRecord"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

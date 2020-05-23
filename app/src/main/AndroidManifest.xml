@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.project.librarymanagement">
+    package="com.example.myproject">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
-        <activity android:name=".Help" />
+
+
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".DeleteBookRecordActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ListUserProductsActivity" />
+        <activity android:name=".ViewBooksUserActivity" />
+        <activity android:name=".ListAllProductsActivity" />
+        <activity android:name=".UpdateBookDetailActivity" />
+        <activity android:name=".AddNewBookActivity" />
+        <activity android:name=".ViewAllBooksActivity" />
         <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminHomePage" />
+        <activity android:name=".Help" />
+        <activity android:name=".Register" />
+        <activity android:name=".DescriptionActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

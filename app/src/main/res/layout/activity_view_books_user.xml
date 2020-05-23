@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ViewBooksUserActivity"
+    android:id="@+id/userBooksDisplay">
+
+
+        <ImageView
+            android:id="@+id/ViewBooksImage"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/csharp"/>
+
+        <TextView
+            android:id="@+id/ViewBooksTitle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:text="Sharath reddy"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ViewBooksPrice"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="$10.00" />
+
+</LinearLayout>

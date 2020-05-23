@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomePage"
+    android:background="@color/colorLightBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome Admin"
+            android:textColor="@color/colorBrownDark"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/main_logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="430dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View all Books"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_viewAllBooks"
+            android:onClick="viewAllBooks"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Book"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_addNewBook"
+            android:onClick="addNewBook"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Book Detail"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_updateBookDetail"
+            android:onClick="updateBookDetail"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Book Record"
+            android:textColor="@color/colorOrange"
+            android:textStyle="italic"
+            android:layout_marginLeft="5dp"
+            android:textSize="26sp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/main_deleteBookRecord"
+            android:onClick="deleteBookRecord"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

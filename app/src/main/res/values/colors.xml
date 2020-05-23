@@ -7,5 +7,14 @@
     <color name="color2">#107DAC</color>
     <color name="color3">#189AD3</color>
     <color name="color4">#ffffcc</color>
+    <color name="color5">#000</color>
+    <color name="colorBrownDark">#A52A2A</color>
 
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorOrange">#e25f00</color>
+
+    <color name="colorLightBg">#fff8dc</color>
+
+    <color name="colorLightBg2">#f9eac3</color>
 </resources>

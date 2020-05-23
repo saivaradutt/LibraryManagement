@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color4"
-    tools:context="com.project.librarymanagement.MainActivity">
+    tools:context="com.example.myproject.AdminLogin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +24,6 @@
             android:fontFamily="cursive"
             android:textColor="@android:color/white"/>
 
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -43,20 +41,20 @@
             android:layout_height="62dp"
             android:drawableStart="@drawable/ic_email_foreground"
             android:ems="10"
-            android:hint="username"
+            android:hint="Username"
             android:inputType="textPersonName"
             android:padding="15dp"
-            android:paddingTop="20dp"
-            android:text="username" />
+            android:paddingTop="20dp" />
 
         <EditText
             android:id="@+id/admin_password"
             android:layout_width="match_parent"
             android:layout_height="62dp"
-            android:drawableStart="@drawable/ic_password_foreground"
+            android:drawableLeft="@drawable/ic_password_foreground"
             android:ems="10"
             android:inputType="textPassword"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:hint="Password"/>
 
         <Button
             android:layout_width="match_parent"
@@ -65,7 +63,8 @@
             android:text="Login"
             android:textColor="@android:color/white"
             android:background="@color/color2"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:onClick="adminLoginBtn"/>
 
 
     </LinearLayout>
